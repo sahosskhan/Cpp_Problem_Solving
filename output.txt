@@ -1,1 +1,1 @@
-not armstrong
+strong number
