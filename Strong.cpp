@@ -3,15 +3,22 @@ using namespace std;
 
 int main()
 {
-    int num, sum = 0, i;
+    int i, num, sum = 0, rem, temp;
     cin >> num;
-    for (i = 1; i < num; i++)
+    temp = num;
+    while (num != 0)
     {
-        if (num % i == 0)
-            sum += i;
+        int fact = 1;
+        rem = num % 10;
+        for (i = 1; i <= rem; i++)
+        {
+            fact *= i;
+        }
+        sum += fact;
+        num /= 10;
     }
-    if (sum == num)
-        cout << "strong number";
+    if (sum == temp)
+        cout << "srong number";
     else
         cout << "not strong number";
 }

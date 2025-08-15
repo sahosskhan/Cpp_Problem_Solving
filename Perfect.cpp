@@ -11,7 +11,7 @@ int main()
             sum += i;
     }
     if (sum == num)
-        cout << "strong number";
+        cout << "perfect number";
     else
-        cout << "not strong number";
+        cout << "not perfect number";
 }
